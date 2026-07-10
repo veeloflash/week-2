@@ -1,0 +1,20 @@
+Week 2 Project Notes
+
+1. Why use JSON instead of SQLite for Company Information?
+JSON is a good fit here because the data is simple, human-readable, and easy to edit by hand or inspect in a CLI. It is also lightweight for a small project and convenient for sharing and version control. SQLite would be more appropriate when the data becomes complex, relational, or requires frequent querying and indexing.
+
+2. Why should Company and Watchlist be stored separately?
+Company stores the master dataset of companies, while Watchlist stores a user-specific list of tracked tickers. Keeping them separate avoids mixing core data with personal preferences and makes it easier to update company information without affecting the watchlist.
+
+3. Why should configuration not be hard-coded?
+Configuration should stay flexible because environment, file locations, log levels, and data paths may change. Hard-coding makes the system less portable and harder to maintain when moving between machines or deployment environments.
+
+4. Why should logs be managed separately?
+Logging should be separate so the system can record runtime events without interfering with business data. It also helps with debugging, monitoring, and auditing while keeping the main data files clean and focused.
+
+5. If company count grows to 1 million rows, can the current design still be used?
+The current JSON design can still work for small to medium datasets, but it will become slow and less scalable for 1 million records. At that scale, a database such as SQLite or PostgreSQL would be a better choice because it supports indexing and faster queries.
+
+Official documentation reading notes
+Python logging vs print:
+The official Python logging module is recommended because it supports log levels, formatting, output destinations, and structured debugging control. Unlike print, logging can be configured for different environments and can be enabled or disabled without changing application code.

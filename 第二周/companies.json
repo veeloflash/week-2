@@ -1,0 +1,26 @@
+[
+  {
+    "Company": "Apple Inc.",
+    "Ticker": "AAPL",
+    "Industry": "Consumer Electronics",
+    "Country": "US",
+    "Description": "Designs and sells consumer electronics, software, and online services.",
+    "Market Cap": "3.0T"
+  },
+  {
+    "Company": "Microsoft Corporation",
+    "Ticker": "MSFT",
+    "Industry": "Software",
+    "Country": "US",
+    "Description": "Develops and licenses software, services, and hardware products.",
+    "Market Cap": "3.1T"
+  },
+  {
+    "Company": "Alphabet Inc.",
+    "Ticker": "GOOGL",
+    "Industry": "Internet Services",
+    "Country": "US",
+    "Description": "Operates a technology company focused on internet services and advertising.",
+    "Market Cap": "2.1T"
+  }
+]
